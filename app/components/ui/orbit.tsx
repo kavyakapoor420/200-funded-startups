@@ -2,7 +2,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { useRef } from "react"
-import { Analog, Cap, Lucid, Mail0, Nimbus, SupMemory } from  '../../icons/icons'
+import { Analog, Cap, Lucid, Mail0, Nimbus, SupMemory } from  '../../../icons/icons'
 
 export default function OrbitComponent() {
     const orbitRef = useRef<HTMLDivElement>(null)
