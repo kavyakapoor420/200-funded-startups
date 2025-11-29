@@ -219,19 +219,17 @@
 //   );
 // }
 
-
 "use client"
 
 import { startups } from "@/data/data"
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { ArrowLeft, ExternalLink, MapPin, Calendar, TrendingUp, Globe, Building2, Users } from "lucide-react"
+import { ArrowLeft, ExternalLink, MapPin, Calendar, TrendingUp, Building2, Users } from "lucide-react"
 import { motion } from "framer-motion"
 import React from "react"
-import { Badge } from '../../../components/ui/badge'
-import { Button } from  '../../../components/ui/button'
-import BgMain from '../../../../assets/bgmain.svg'
+import { Badge } from  '../../components/ui/badge'
+import { Button } from "../../components/ui/button"
 
 function IndianText({ className = "" }: { className?: string }) {
   return (
@@ -270,10 +268,10 @@ export default function StartupDetail({
   const relatedStartups = startups.filter((s) => s.sector === startup.sector && s.id !== startup.id).slice(0, 3)
 
   return (
-    <div className="relative min-h-screen overflow-hidden ">
+    <div className="relative min-h-screen overflow-hidden bg-[#0a0118]">
       {/* Background with gradient mesh */}
       <div className="fixed inset-0 -z-10">
-        <Image src={BgMain} alt="background" fill className="object-cover" priority />
+        <Image src="/bg-main.svg" alt="background" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a0118]/60 via-transparent to-[#0a0118]/90" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(139,92,246,0.15),transparent_50%)]" />
       </div>

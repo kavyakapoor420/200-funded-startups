@@ -263,19 +263,19 @@
 
 
 
+
 "use client"
 
 import { startups } from "@/data/data"
 import Image from "next/image"
 import Link from "next/link"
-import { Input } from '../components/ui/input'
+import { Input } from "../components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select"
-import { Search, TrendingUp, MapPin, Globe, Building2 } from "lucide-react"
+import { Search, TrendingUp, MapPin, Building2 } from "lucide-react"
 import { motion } from "framer-motion"
 import { useState } from "react"
-import { Badge } from "../components/ui/badge"
-import BgMain from '../../assets/bgmain.svg'
-
+import { Badge } from '../components/ui/badge'
+import BgImage from '../../assets/bgmain.svg'
 
 function IndianText({ className = "" }: { className?: string }) {
   return (
@@ -316,10 +316,10 @@ export default function StartupsPage() {
   }
 
   return (
-    <div className="relative min-h-screen overflow-hidden ">
+    <div className="relative min-h-screen overflow-hidden">
       {/* Background with gradient mesh */}
       <div className="fixed inset-0 -z-10">
-        <Image src={BgMain} alt="background" fill className="object-cover" priority />
+        <Image src={BgImage} alt="background" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a0118]/60 via-transparent to-[#0a0118]/90" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(139,92,246,0.15),transparent_50%)]" />
       </div>
