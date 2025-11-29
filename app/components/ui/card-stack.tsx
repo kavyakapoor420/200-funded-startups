@@ -24,7 +24,7 @@ const SIMPLE_CARDS = [
                     <path d="M15.7359 11.5C15.3219 11.5 14.9859 11.836 14.9859 12.25L9.11592 15.341C9.04392 15.379 8.95792 15.379 8.88392 15.341L3.01392 12.25C3.01392 11.836 2.67792 11.5 2.26392 11.5C1.84992 11.5 1.51392 11.836 1.51392 12.25C1.51392 12.809 1.82092 13.317 2.31492 13.577L8.18392 16.667C8.43892 16.802 8.71992 16.87 8.99992 16.87C9.27992 16.87 9.55992 16.803 9.81492 16.668L15.6849 13.577C16.1789 13.317 16.4859 12.808 16.4859 12.25C16.4859 11.836 16.1499 11.5 15.7359 11.5Z" fill="#C5A2F4" />
                 </svg>
                 <div className="bg-gradient-to-r from-[#C5A2F4] via-[#fff] to-[#fff] bg-clip-text">
-                    <p className='text-transparent font-semibold text-sm '>Filter By: TECH STACK</p>
+                    <p className='text-transparent font-semibold text-sm '>Filter By:  Location</p>
                 </div>
             </div>
             <TechTags />

@@ -122,12 +122,12 @@ const Hero = () => {
           className="flex items-center justify-center gap-2 mb-4"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-black/40 backdrop-blur-sm border border-[#252525]">
-            <span className="text-[#e1e1e1] text-sm font-medium">Curated from</span>
+            <span className="text-[#e1e1e1] text-sm font-medium">Designed by</span>
             <div className="flex items-center gap-1.5">
               <div className="w-5 h-5 bg-gradient-to-br from-[#FF6154] to-[#FF8C00] rounded flex items-center justify-center">
-                <span className="text-white text-xs font-bold">C</span>
+                <span className="text-white text-xs font-bold">K</span>
               </div>
-              <span className="text-white text-sm font-medium">runchbase</span>
+              <span className="text-white text-sm font-medium">avya Kapoor</span>
             </div>
           </div>
         </motion.div>

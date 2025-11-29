@@ -78,7 +78,7 @@ const Footer = () => {
 
                 <li>
                   <Link
-                    href="https://github.com/yourusername/indian-startup-directory"
+                    href="https://github.com/kavyakapoor420"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#d1d1d1] hover:text-white text-sm transition-colors flex items-center gap-1"
@@ -106,7 +106,7 @@ const Footer = () => {
 
             <div className="flex gap-6">
               <Link
-                href="https://twitter.com/yourhandle"
+                href="https://www.linkedin.com/in/kavyakapoor420/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#d1d1d1] hover:text-white transition-colors"
@@ -115,7 +115,7 @@ const Footer = () => {
               </Link>
 
               <Link
-                href="https://github.com/yourusername"
+                href="https://github.com/kavyakapoor420"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#d1d1d1] hover:text-white transition-colors"
@@ -124,7 +124,7 @@ const Footer = () => {
               </Link>
 
               <Link
-                href="https://yourwebsite.com"
+                href="https://kavya-portfolio-theta.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#d1d1d1] hover:text-white transition-colors"
