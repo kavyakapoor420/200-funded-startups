@@ -30,7 +30,7 @@ export default function OrbitComponent() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
                 className="absolute inset-[90px] rounded-full  text-white font-bold text-lg -z-0 flex items-center justify-center">
-                <p className="text-3xl tracking-tighter">Opensox AI</p>
+                <p className="text-3xl tracking-tighter">Kavya{" "}Kapoor</p>
             </motion.div>
 
             <motion.div

@@ -83,7 +83,19 @@ const Navbar = () => {
         ))}
       </div>
 
+      
+
       <div className="flex items-center gap-3">
+         <Link
+          href="https://github.com/kavyakapoor420"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden lg:flex items-center mr-3 gap-2 px-6 py-2.5 bg-[#0d1117] hover:bg-[#161b22] transition-colors rounded-lg border border-[#30363d] text-white"
+        >
+  
+          <span className="text-xl font-bold text-green-500 font-medium">login</span>
+        </Link>
+
         <Link href="/startups" className="cursor-pointer z-30">
           <PrimaryButton classname="px-3 py-2 text-sm whitespace-nowrap md:px-5 md:py-3 md:text-base">
             <Terminal className="w-4 h-4 md:w-5 md:h-5" />

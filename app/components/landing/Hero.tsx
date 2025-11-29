@@ -94,6 +94,16 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import BgImage from '../../../assets/bgmain.svg'
 
+function IndianText({ className = "" }: { className?: string }) {
+  return (
+    <span className={className}>
+      <span className="text-orange-500">In</span>
+      <span className="text-white">di</span>
+      <span className="text-green-500">an</span>
+    </span>
+  )
+}
+
 const Hero = () => {
   return (
     <div className="w-full min-h-[50dvh] lg:h-[69dvh] relative overflow-hidden z-10 p-4 lg:p-[60px] flex flex-col items-center justify-center gap-6 ">
@@ -128,7 +138,7 @@ const Hero = () => {
           transition={{ duration: 1.2, ease: "easeOut", type: "spring" }}
           className="text-5xl text-[2.8rem] lg:text-7xl lg:text-[6rem] font-medium tracking-tighter"
         >
-          Discover India’s Top Funded Startups
+          Discover <IndianText/> Top Funded Startups
         </motion.h1>
 
         <motion.p
@@ -142,7 +152,7 @@ const Hero = () => {
           }}
           className="w-full lg:text-2xl tracking-tight font-light sm:max-w-lg mx-auto lg:max-w-4xl lg:text-balance text-[#e1e1e1]"
         >
-          Explore the fastest-growing Indian startups. Filter by sector, funding, city, or HQ — all in one beautiful directory.
+          Explore the fastest-growing <IndianText/> startups. Filter by sector, funding, city, or HQ  all in one beautiful directory.
         </motion.p>
       </div>
 

@@ -14,7 +14,7 @@ export const startups: Array<{
     {
     "id": "flipkart",
     "name": "Flipkart",
-    "logo": "https://seeklogo.com/vector-logo/284422/flipkart",
+    "logo": "https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg",
     "sector": "E-commerce",
     "funding": 6200,
     "hq": "Bengaluru, Karnataka, India",
