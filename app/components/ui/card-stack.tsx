@@ -36,7 +36,7 @@ const SIMPLE_CARDS = [
             <div className="flex items-center gap-1 ">
                 <Target />
                 <div className="bg-gradient-to-r from-[#4684de] via-[#fff] to-[#fff] bg-clip-text">
-                    <p className='text-transparent font-semibold text-sm '>Filter By: COMPETITION</p>
+                    <p className='text-transparent font-semibold text-sm '>Filter By: Sector</p>
                 </div>
             </div>
 

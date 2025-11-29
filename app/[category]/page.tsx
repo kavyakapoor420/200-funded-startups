@@ -12,7 +12,7 @@ function IndianText() {
     <span className="inline-flex">
       <span className="text-orange-500">In</span>
       <span className="text-white">di</span>
-      <span className="text-green-500">an</span>
+      <span className="text-green-500">a</span>
     </span>
   )
 }
@@ -35,17 +35,25 @@ export default function CategoryPage({
   params: Promise<{ category: string }>
 }) {
   const { category } = React.use(params)
-  const cat = category.toLowerCase()
-
+  if (!category) {
+    return <div>No category specified</div>
+  }
+  
+  const cat = category.toString().toLowerCase()
   let filtered = startups
 
   if (cat === "fintech") {
-    filtered = startups.filter((s) => s.sector.toLowerCase().includes("fintech"))
+    filtered = startups.filter((s) => 
+      s.sector.toLowerCase().includes("fintech")
+    )
   } else if (cat === "edtech") {
-    filtered = startups.filter((s) => s.sector.toLowerCase().includes("edtech"))
+    filtered = startups.filter((s) => 
+      s.sector.toLowerCase().includes("edtech")
+    )
   } else if (cat === "ecommerce" || cat === "e-commerce") {
-    filtered = startups.filter(
-      (s) => s.sector.toLowerCase().includes("e-commerce") || s.sector.toLowerCase().includes("commerce"),
+    filtered = startups.filter((s) => 
+      s.sector.toLowerCase().includes("e-commerce") || 
+      s.sector.toLowerCase().includes("commerce")
     )
   } else if (cat === "bengaluru" || cat === "bangalore") {
     filtered = startups.filter(
@@ -78,7 +86,7 @@ export default function CategoryPage({
     mumbai: "Startups from Mumbai",
     unicorn: "Unicorn Startups",
     unicorns: "Unicorn Startups",
-    "high-funded": "High-Funded Startups (>$500M)",
+    "high-funded": "High-Funded Startups",
   }
 
   const titleText = titleTexts[cat] || `Startups: ${category.charAt(0).toUpperCase() + category.slice(1)}`

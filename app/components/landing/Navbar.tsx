@@ -39,9 +39,9 @@ const Navbar = () => {
   const links = [
     { name: "Home", href: "/" },
     { name: "All Startups", href: "/startups" },
-    { name: "Fintech", href: "/startups/fintech" },
-    { name: "EdTech", href: "/startups/edtech" },
-    { name: "High Funded", href: "/startups/high-funded" }
+    { name: "Fintech", href: "/fintech" },
+    { name: "EdTech", href: "/edtech" },
+    { name: "High Funded", href: "/high-funded" }
   ];
 
   return (
