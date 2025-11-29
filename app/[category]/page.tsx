@@ -5,6 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { MapPin } from "lucide-react"
 import { motion } from "framer-motion"
+import { notFound } from 'next/navigation';
 import React from "react"
 
 function IndianText() {
@@ -29,32 +30,50 @@ function getSectorColor(sector: string) {
   return colors[sector] || "bg-violet-500/20 text-violet-300 border-violet-500/30"
 }
 
+
+
+// List of valid categories that match the navbar links
+const VALID_CATEGORIES = [
+  'fintech',
+  'edtech',
+  'high-funded',
+  'startups'  // for /startups route
+];
+
 export default function CategoryPage({
   params,
 }: {
   params: Promise<{ category: string }>
 }) {
-  const { category } = React.use(params)
+  // Properly unwrap the params promise
+  const { category } = React.use(params);
+  
   if (!category) {
-    return <div>No category specified</div>
+    notFound();
   }
   
-  const cat = category.toString().toLowerCase()
-  let filtered = startups
+  const cat = category.toString().toLowerCase();
+  
+  // Check if the category is valid
+  if (!VALID_CATEGORIES.includes(cat) && cat !== 'startups') {
+    notFound();
+  }
+  
+  let filtered = startups;
 
   if (cat === "fintech") {
-    filtered = startups.filter((s) => 
+    filtered = startups.filter(s => 
       s.sector.toLowerCase().includes("fintech")
-    )
+    );
   } else if (cat === "edtech") {
-    filtered = startups.filter((s) => 
+    filtered = startups.filter(s => 
       s.sector.toLowerCase().includes("edtech")
-    )
+    );
   } else if (cat === "ecommerce" || cat === "e-commerce") {
-    filtered = startups.filter((s) => 
+    filtered = startups.filter(s => 
       s.sector.toLowerCase().includes("e-commerce") || 
       s.sector.toLowerCase().includes("commerce")
-    )
+    );
   } else if (cat === "bengaluru" || cat === "bangalore") {
     filtered = startups.filter(
       (s) => s.hq.toLowerCase().includes("bengaluru") || s.hq.toLowerCase().includes("bangalore"),

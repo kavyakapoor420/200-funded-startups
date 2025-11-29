@@ -241,6 +241,8 @@ function IndianText({ className = "" }: { className?: string }) {
   )
 }
 
+
+
 export default function StartupDetail({
   params,
 }: {
