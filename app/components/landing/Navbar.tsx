@@ -41,7 +41,6 @@ const Navbar = () => {
     { name: "All Startups", href: "/startups" },
     { name: "Fintech", href: "/startups/fintech" },
     { name: "EdTech", href: "/startups/edtech" },
-    { name: "Bengaluru", href: "/startups/bengaluru" },
     { name: "High Funded", href: "/startups/high-funded" }
   ];
 
