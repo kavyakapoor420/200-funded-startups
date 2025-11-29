@@ -35,12 +35,6 @@ const Navbar = () => {
     }
   });
 
-  // const links = [
-  //   { name: "Pricing", href: "/pricing" },
-  //   { name: "Features", href: "/#features" },
-  //   { name: "Demo", href: "/#demo" },
-  //   { name: "How it works", href: "/#HIW" },
-  // ];
 
   const links = [
     { name: "Home", href: "/" },
@@ -71,7 +65,10 @@ const Navbar = () => {
           <div className="w-8 md:w-10 aspect-square overflow-hidden relative">
             <Image src={Logo} alt="logo" fill className="object-cover w-full h-full" />
           </div>
-          <span className="text-red-400 text-xl font-bold">StartupIndia</span>
+          <Link href='http://localhost:3000/'>
+           <span className="text-red-400 text-xl font-bold">Assignment</span>
+          </Link>
+         
         </div>
       </div>
 
