@@ -229,9 +229,9 @@ import { notFound } from "next/navigation"
 import { ArrowLeft, ExternalLink, MapPin, Calendar, TrendingUp, Globe, Building2, Users } from "lucide-react"
 import { motion } from "framer-motion"
 import React from "react"
-import { Badge } from '../../components/ui/badge'
-import { Button } from  '../../components/ui/button'
-import BgMain from '../../../assets/bgmain.svg'
+import { Badge } from '../../../components/ui/badge'
+import { Button } from  '../../../components/ui/button'
+import BgMain from '../../../../assets/bgmain.svg'
 
 function IndianText({ className = "" }: { className?: string }) {
   return (

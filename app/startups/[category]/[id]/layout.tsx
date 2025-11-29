@@ -1,5 +1,5 @@
 // app/startups/[id]/layout.tsx   ← THIS IS A SERVER COMPONENT (no "use client")
-import { startups }  from '../../../data/data'
+import { startups }  from '../../../../data/data'
 
 
 export const generateStaticParams = () => {
